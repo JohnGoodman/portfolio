@@ -17,10 +17,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: normal;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -32,3 +28,157 @@ img {
 /* Base */
 /* --------------------------------- */
 
+main,
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+
+section.background-light {
+  background-color: #F4F3F7;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+}
+
+.block {
+  max-width: 80%;
+  margin-bottom: 60px;
+}
+
+h1, h2, h3, p, li, a {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: #252525;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+h2, h3, p, ul {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  margin-bottom: 60px;
+  font-family: "Baskervville", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  opacity: .5;
+}
+
+p, li {
+  font-size: 1.15rem;
+  line-height: 1.65rem;
+  font-weight: 300;
+}
+
+ul {
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.block:last-of-type,
+p:last-of-type,
+li:last-of-type {
+  margin-bottom: initial;
+}
+
+.intro {
+  display: inline-block;
+  min-width: 200px;
+}
+
+.spacer-15 {
+  height: 15px;
+}
+
+.spacer-30 {
+  height: 30px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+
+/* --------------------------------- */
+/* Main */
+/* --------------------------------- */
+
+main {
+  background-color: #251846;
+}
+
+main h1,
+main p {
+  color: #ffffff;
+}
+
+.main-description {
+  max-width: 80%;
+}
+
+
+
+/* --------------------------------- */
+/* Case Studies */
+/* --------------------------------- */
+
+.team-titles {
+  margin-right: 30px;
+}
+
+
+
+
+
+/* --------------------------------- */
+/* Responsive */
+/* --------------------------------- */
+
+@media screen and (max-width: 700px) {
+
+  .block,
+  .main-description {
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p, li {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  ul {
+    margin-left: 30px;
+  }
+
+}
