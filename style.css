@@ -120,7 +120,22 @@ li:last-of-type {
   align-items: flex-start;
 }
 
+.seperator-container {
+  position: relative;
+  height: 30px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+.seperator {
+  position: absolute;
+  z-index: 1;
+  height: 30px;
+  width: 100%;
 
+  background-image: url('./images/seperator.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /* --------------------------------- */
 /* Main */
