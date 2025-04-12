@@ -154,6 +154,26 @@ main p {
   max-width: 80%;
 }
 
+.main-links {
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  background-image: url('./images/linkedin-white.png');
+}
+
+.github {
+  background-image: url('./images/github-white.png');
+}
 
 
 /* --------------------------------- */
